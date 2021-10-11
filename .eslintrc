@@ -4,13 +4,16 @@
     "node": true
   },
   "extends": ["eslint:recommended", "airbnb"],
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "plugins": ["react"],
   "globals": {
     "FB": false
   },
   "rules": {
     "react/no-multi-comp": 0,
-    "quotes": "off"
+    "quotes": "off",
+    "keyword-spacing": "off",
+    "no-labels": "off",
+    "no-useless-escape": "off"
   }
 }

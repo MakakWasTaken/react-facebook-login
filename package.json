@@ -8,6 +8,9 @@
     "bundle": "cross-env NODE_ENV=production node_modules/.bin/webpack --config webpack.config.dist.js",
     "test": "node_modules/.bin/eslint src/**/*.js"
   },
+  "files": [
+    "./dist"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/keppelen/react-facebook-login.git"
