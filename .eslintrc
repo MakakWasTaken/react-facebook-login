@@ -3,18 +3,14 @@
     "browser": true,
     "node": true
   },
-  "extends": [
-    "eslint:recommended",
-    "airbnb"
-  ],
+  "extends": ["eslint:recommended", "airbnb"],
   "parser": "babel-eslint",
-  "plugins": [
-    "react"
-  ],
+  "plugins": ["react"],
   "globals": {
     "FB": false
   },
   "rules": {
-    "react/no-multi-comp": 0
+    "react/no-multi-comp": 0,
+    "quotes": "off"
   }
 }
