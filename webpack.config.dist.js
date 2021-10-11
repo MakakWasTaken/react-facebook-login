@@ -7,7 +7,7 @@ module.exports = {
   },
 
   module: {
-    loaders: [
+    rules: [
       { test: /\.js$/, use: "babel-loader", exclude: /node_modules/ },
       {
         test: /\.s[ac]ss$/i,
@@ -29,7 +29,7 @@ module.exports = {
   },
 
   output: {
-    filename: "dist/facebook-login-[name].js",
+    filename: "facebook-login-[name].js",
     libraryTarget: "umd",
     library: "FacebookLogin",
   },
@@ -44,12 +44,5 @@ module.exports = {
         NODE_ENV: JSON.stringify("production"),
       },
     }),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false,
-      },
-    }),
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.OccurrenceOrderPlugin(),
   ],
 };
